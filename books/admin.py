@@ -13,5 +13,4 @@ class BookAdmin(admin.ModelAdmin):
     ordering = ('title', 'price', )
     inlines = [ReviewInline,]
 
-
 admin.site.register(Book, BookAdmin)
