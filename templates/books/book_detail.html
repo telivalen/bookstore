@@ -9,8 +9,10 @@
         <h2>
             <a href="">{{ book.title }}</a>
         </h2>
-        <img width="10" class="bookcover"  src="{{ book.cover.url }}" alt="{{ book.title }}">
-        <p>Author:{{ book.author }}</p>
+        {% if book.cover %}
+            <img class="bookcover"  src="{{ book.cover.url }}" alt="{{ book.title }}">
+        {% endif %}
+            <p>Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
     </div>
     <div>
