@@ -14,3 +14,4 @@ class BookAdmin(admin.ModelAdmin):
     inlines = [ReviewInline,]
 
 admin.site.register(Book, BookAdmin)
+
